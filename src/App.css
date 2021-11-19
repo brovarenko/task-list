@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+.App{
+  max-width: 650px;
+  margin: 0 auto;
+  width: 95%;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  font-size:x-large;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Task:hover{
+  background-color: rgb(253, 142, 38);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TaskList{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+.Task{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(197, 97, 3);
+  padding: 10px;
+  margin-top: 16px;
+  border-radius: 5px;
+  border:rgb(180, 180, 180);
+  color:azure;
+  
+}
+.Content{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+  background-color: rgba(66, 65, 65, 0.87);
+  padding: 10px;
+  color:aliceblue;
+  
+}
+
+
+.EditContent{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+  background-color: rgba(66, 65, 65, 0.87);
+  padding: 10px;
+  
+  border-radius: 5px;
+}
+.TextArea{
+  flex-grow: 1;
+  margin-right: 5px;
+  padding: 15px;
+  
+  background-color: rgba(24, 24, 24, 0.87);
   color: white;
+  outline:rgba(197, 97, 3, 0.876);
+  border-radius: 5px;
+  border: 2px solid rgb(61, 61, 60);
+  
+}
+input[type=text]{
+  padding: 15px;
+  margin: 5px;
+  background-color: rgba(66, 65, 65, 0.87);
+  color: white;
+  outline:rgba(197, 97, 3, 0.876);
+  border-radius: 5px;
+  border: 2px solid rgb(61, 61, 60);
 }
 
-.App-link {
-  color: #61dafb;
+input[type=text]:focus {
+  border: 2px solid rgb(139, 69, 12);
+  border-radius: 5px;
+  background-color: rgba(24, 24, 24, 0.87);
+}
+input[type=text]:hover {
+  border: 2px solid rgb(139, 69, 12);
+}
+input[type=submit]{
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(197, 97, 3);
+  color: white;
+  border-radius: 5px;
+  border:none;
+}
+input[type=submit]:hover{
+  background-color:  rgba(214, 106, 5, 0.568);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addTaskForm{
+display: flex;
+
+}
+#content{
+  overflow: hidden;
+ 
+}
+.EditBtn{
+  height: 30px;
+  width: 40px;
+}
+#inputTask{
+  flex-grow: 1;
+}
+button{
+  padding: 5px;
+  border:none;
+  border-radius:5px;
+}
+button:hover{
+  background-color: rgb(163, 158, 158);
+}
+body{
+  background-color: rgb(31, 29, 29);
+}
+h1{
+  color: aliceblue;
+}
+div{
+  font-family: 'Shippori Antique B1', sans-serif;
+  
 }
